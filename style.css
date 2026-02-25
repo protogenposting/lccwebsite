@@ -1,0 +1,36 @@
+body {
+    background-image: url("images/bg.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+a:link {
+    color: rgb(255, 166, 0);
+}
+a:visited {
+    color: rgb(255, 81, 0);
+}
+a:hover {
+    color: rgb(221, 255, 28);
+}
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: rgb(221, 255, 28);
+}
+h2 {
+    color: rgb(255, 166, 0);
+}
+p {
+    color: rgb(255, 166, 0);
+}
+

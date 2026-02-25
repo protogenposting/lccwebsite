@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function clicked(){
+      var imagePunch = new Image()
+      imagePunch.src = "images/PUNCH.gif"+"?a="+Math.random();
+
+      let element = document.getElementById("guy")
+
+      element.src = imagePunch.src
+
+      setTimeout(reset, 1000)
+    }
+
+    function reset(){
+      var imageDefault = new Image()
+      imageDefault.src = "images/intro.gif"+"?a="+Math.random();
+
+      let element = document.getElementById("guy")
+
+      element.src = imageDefault.src
+    }
+  </script>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Carson's Epic Website</title>
+  </head>
+  <body>
+    <h1>Welcome to Carson's Fun Zone!</h1>
+    <button style="background: transparent; border: none !important; font-size:0;" type="button" onclick="clicked()">
+      <image id="guy" style="filter: invert(100%); position: absolute; top: 50%; left: -20%" src="images/intro.gif" width="50%" height="50%">
+    </button>
+    <a href="./about.html"><h2>About Me!</h2></a>
+    <a href="./games.html"><h2>Projects!</h2></a>
+    <a href="./games.html"><h2>Play a Game I Made!</h2></a>
+  </body>
+</html>
