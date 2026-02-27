@@ -40,6 +40,20 @@
         <p>Example: <code>mv file.txt ~/.config</code> (moves a file named "file.txt" from your current directory to the ".config" directory stored in home)</p>
       </div>
     </div>
+    <button type="button" class="collapsible">Root</button>
+    <div class="content">
+      <p>Using root is essential for some commands, since they may require higher privelidges than your default user has. If you run into a command that requires root, make sure to read it since it may mess up your system!</p>
+      <button type="button" class="collapsible">sudo</button>
+      <div class="content">
+        <p>sudo runs the following command as the root user, requiring you to enter your password first</p>
+        <p>Example: "sudo apt install firefox" (installs firefox as the root user if your system uses apt as its package manager)</p>
+      </div>
+      <button type="button" class="collapsible">su</button>
+      <div class="content">
+        <p>su allows you to run multiple commands as the root user. Not much else to say</p>
+      </div>
+    </div>
+    <p>If you want to learn more commands or get into more detail, the <a href="https://wiki.archlinux.org/title/Main_page">Arch Linux Wiki</a> is an amazing resource, even if you aren't using Arch Linux</p>
   </body>
 </html>
 

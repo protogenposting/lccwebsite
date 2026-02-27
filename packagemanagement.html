@@ -18,41 +18,55 @@
         <th>Package Manager</th>
         <th>Command Example (installing firefox)</th>
         <th>Distro(s)</th>
+        <th>Package Search Website(s)</th>
       </tr>
       <tr>
         <td>apt</td>
         <td>apt install firefox</td>
         <td>Debian, Ubuntu, Mint</td>
+        <td><a href="https://www.debian.org/distrib/packages">Debian Package Search</a>, <a href="https://packages.ubuntu.com/">Ubuntu Package Search</a></td>
       </tr>
       <tr>
         <td>dnf</td>
         <td>dnf install firefox</td>
         <td>Fedora, Red Hat</td>
+        <td><a href="https://packages.fedoraproject.org/">Fedora Package Search</a></td>
       </tr>
       <tr>
         <td>pacman</td>
         <td>pacman -S firefox</td>
         <td>Arch, CachyOS</td>
+        <td><a href="https://archlinux.org/packages/">Arch Package Search</a></td>
+      </tr>
+      <tr>
+        <td>yay</td>
+        <td>yay -S firefox</td>
+        <td>Arch User Repository</td>
+        <td><a href="https://aur.archlinux.org/packages">AUR Package Search</a></td>
       </tr>
       <tr>
         <td>flatpak</td>
         <td>flatpak install firefox</td>
         <td>Distro independant</td>
+        <td><a href="https://flathub.org/en">Flathub</a></td>
       </tr>
       <tr>
         <td>portage</td>
         <td>emerge --ask www-client/firefox-bin</td>
         <td>Gentoo</td>
+        <td><a href="https://packages.gentoo.org/">Gentoo Package Search</a></td>
       </tr>
       <tr>
         <td>NixOS</td>
         <td>nix-env --install firefox #This is a temporary install on nix, use the configuration file for a permenant install</td>
         <td>NixOS</td>
+        <td><a href="https://search.nixos.org/packages">Nixpkg Search</a></td>
       </tr>
       <tr>
         <td>Snap</td>
         <td>snap install firefox</td>
         <td>Ubuntu</td>
+        <td><a href="https://snapcraft.io/">Snapcraft</a></td>
       </tr>
     </table>
     <p>Update Command:</p>
@@ -76,6 +90,11 @@
         <td>pacman</td>
         <td>pacman -Syu</td>
         <td>Arch, CachyOS</td>
+      </tr>
+      <tr>
+        <td>yay</td>
+        <td>yay -Syu</td>
+        <td>Arch User Repository</td>
       </tr>
       <tr>
         <td>flatpak</td>
