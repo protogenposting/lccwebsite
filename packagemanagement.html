@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Carson's Epic Website</title>
+  </head>
+  <body>
+    <h1><a href="./">Return</a></h1>
+    <h2>What is a package manager?</h2>
+    <p>A package manager is a program that... well... manages packages. A package is a bundle of software that a package manager can find and install. Think of a package manager like the App Store, with packages being the apps.</p>
+    <h2>Why are package managers useful?</h2>
+    <p>Package managers allow you to easily find and install any software you want. If you've use Windows, you would know how annoying it is to search for an installer for a program, download the installer, run the installer, and then have to delete the installer after to free up space. Package managers streamline this process by doing it all for you.</p>
+    <p>Package managers also have functionality to update your entire system with a single command, meaning you no longer need to go through every app that needs an update to perform maintanence.</p>
+    <h2>Common Package Managers</h2>
+    <p>Install Command:</p>
+    <table>
+      <tr>
+        <th>Package Manager</th>
+        <th>Command Example (installing firefox)</th>
+        <th>Distro(s)</th>
+      </tr>
+      <tr>
+        <td>apt</td>
+        <td>apt install firefox</td>
+        <td>Debian, Ubuntu, Mint</td>
+      </tr>
+      <tr>
+        <td>dnf</td>
+        <td>dnf install firefox</td>
+        <td>Fedora, Red Hat</td>
+      </tr>
+      <tr>
+        <td>pacman</td>
+        <td>pacman -S firefox</td>
+        <td>Arch, CachyOS</td>
+      </tr>
+      <tr>
+        <td>flatpak</td>
+        <td>flatpak install firefox</td>
+        <td>Distro independant</td>
+      </tr>
+      <tr>
+        <td>portage</td>
+        <td>emerge --ask www-client/firefox-bin</td>
+        <td>Gentoo</td>
+      </tr>
+      <tr>
+        <td>NixOS</td>
+        <td>nix-env --install firefox #This is a temporary install on nix, use the configuration file for a permenant install</td>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <td>Snap</td>
+        <td>snap install firefox</td>
+        <td>Ubuntu</td>
+      </tr>
+    </table>
+    <p>Update Command:</p>
+    <table>
+      <tr>
+        <th>Package Manager</th>
+        <th>Command Example</th>
+        <th>Distro(s)</th>
+      </tr>
+      <tr>
+        <td>apt</td>
+        <td>apt update && apt upgrade</td>
+        <td>Debian, Ubuntu, Mint</td>
+      </tr>
+      <tr>
+        <td>dnf</td>
+        <td>dnf upgrade</td>
+        <td>Fedora, Red Hat</td>
+      </tr>
+      <tr>
+        <td>pacman</td>
+        <td>pacman -Syu</td>
+        <td>Arch, CachyOS</td>
+      </tr>
+      <tr>
+        <td>flatpak</td>
+        <td>flatpak update</td>
+        <td>Distro independant</td>
+      </tr>
+      <tr>
+        <td>portage</td>
+        <td>emerge --sync && emerge --update --deep --with-bdeps=y @world</td>
+        <td>Gentoo</td>
+      </tr>
+      <tr>
+        <td>NixOS</td>
+        <td>nixos-rebuild switch --flake ~/flake#hostname</td>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <td>Snap</td>
+        <td>snap refresh</td>
+        <td>Ubuntu</td>
+      </tr>
+    </table>
+  </body>
+</html>

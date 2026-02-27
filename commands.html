@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Carson's Epic Website</title>
+  </head>
+  <body>
+    <h1><a href="./">Return</a></h1>
+    <p>The command line. One of the most important parts of the Linux experience. It is extremely important that any Linux user (or users of any OS at all) learn how the commandline works.</p>
+    <h2>Terminal Emulators</h2>
+    <p>Terminal emulators are programs used to access the terminal on a regular Desktop. Without these programs, users would be locked to just their Desktop with no lower level system access. Check your distro and Desktop Enviornment to see what your terminal emulator is called.</p>
+    <p>If you are using a server distro, the commandline will be opened by default, you don't need to worry about a terminal emulator.</p>
+    <h2>Basic Commands</h2>
+    <button type="button" class="collapsible">File Management</button>
+    <div class="content">
+      <button type="button" class="collapsible">cd</button>
+      <div class="content">
+        <p>cd stands for Change Directory. It allows you to change the folder you are executing commands in.</p>
+        <p>Example: <code>cd ~</code> (~ stands for your home directory, so this commands moves your current location to the home directory)</p>
+      </div>
+      <button type="button" class="collapsible">ls</button>
+      <div class="content">
+        <p>ls stand for LiSt. This command allows you to list every file and directory inside the one you are currently in.</p>
+      </div>
+      <button type="button" class="collapsible">rm</button>
+      <div class="content">
+        <p>rm stands for ReMove. this command lets you remove a file or directory.</p>
+        <p>Example: <code>rm file.txt</code> (removes a file in the current directory named "file.txt")</p>
+        <p>Example: <code>rm -rf folder</code> (removes a directory named "folder")</p>
+        <p>Example: <code>rm -rf /</code> (NEVER RUN THIS!!! IT DELETES YOUR ENTIRE SYSTEM!!!)</p>
+      </div>
+      <button type="button" class="collapsible">cp</button>
+      <div class="content">
+        <p>cp stands for CoPy. Allows you to copy a file from one location to the next</p>
+        <p>Example: <code>cp file.txt ~/.config</code> (copies a file named "file.txt" from your current directory to the ".config" directory stored in home)</p>
+      </div>
+      <button type="button" class="collapsible">mv</button>
+      <div class="content">
+        <p>mv stands for MoVe. Similar to cp but moves the file instead of copying it</p>
+        <p>Example: <code>mv file.txt ~/.config</code> (moves a file named "file.txt" from your current directory to the ".config" directory stored in home)</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>

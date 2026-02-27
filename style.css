@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/bg.gif");
+    background-image: url("images/puterbg.gif");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,25 +12,83 @@ body {
 }
 
 a:link {
-    color: rgb(255, 166, 0);
+    color: rgb(0, 166, 0);
 }
 a:visited {
-    color: rgb(255, 81, 0);
+    color: rgb(0, 81, 0);
 }
 a:hover {
-    color: rgb(221, 255, 28);
+    color: rgb(0, 255, 28);
 }
 a:active {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 255, 255);
 }
 
 h1 {
-    color: rgb(221, 255, 28);
+    color: rgb(0, 255, 28);
 }
 h2 {
-    color: rgb(255, 166, 0);
+    color: rgb(0, 166, 0);
 }
 p {
-    color: rgb(255, 166, 0);
+    color: rgb(120, 255, 120);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
+code {
+    font-family: Consolas,"courier new";
+    color: rgb(0, 255, 0);
+    background-color: #000000;
+    padding: 2px;
+    font-size: 105%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
