@@ -26,11 +26,20 @@ a:active {
 
 h1 {
     color: rgb(221, 255, 28);
+    text-align: center;
 }
 h2 {
     color: rgb(255, 166, 0);
+    text-align: center;
 }
 p {
     color: rgb(255, 166, 0);
+    text-align: center;
 }
 
+.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

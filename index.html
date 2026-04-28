@@ -20,18 +20,58 @@
 
       element.src = imageDefault.src
     }
+
+    const images = document.getElementsByClassName("project");
+
+    function updateProjects(){
+      // use window.scrollY
+
+      for (i in images)
+      {
+        try
+        {
+          let dist = images[i].getBoundingClientRect().top - window.scrollY
+        }
+        catch(e)
+        {
+
+        }
+      }
+
+      setTimeout(updateProjects, 16)
+    }
+
+    setTimeout(updateProjects, 16)
+
   </script>
   <head>
     <link rel="stylesheet" href="./style.css">
     <title>Carson's Epic Website</title>
   </head>
   <body>
-    <h1>Welcome to Carson's Fun Zone!</h1>
+    <h1>havent thought of something to put here yet</h1>
     <button style="background: transparent; border: none !important; font-size:0;" type="button" onclick="clicked()">
-      <image id="guy" style="filter: invert(100%); position: absolute; top: 50%; left: -20%" src="images/intro.gif" width="50%" height="50%">
+      <image id="guy" style="filter: invert(100%); position: absolute; top: 0%; left: -20%" src="images/intro.gif" width="50%" height="50%">
     </button>
-    <a href="./about.html"><h2>About Me!</h2></a>
-    <a href="./games.html"><h2>Projects!</h2></a>
-    <a href="./games.html"><h2>Play a Game I Made!</h2></a>
+    <h2>Projects<h2>
+    <image src="images/Projects/moodboard.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/emphasis.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/Balance.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/moodboard.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/emphasis.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/Balance.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/moodboard.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/emphasis.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+    <image src="images/Projects/Balance.png" width="50%" height="50%" class="project">
+    <p>reflections here</p>
+
   </body>
 </html>
