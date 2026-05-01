@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./stylecode.css">
+        <title>Carson's Epic Website</title>
+    </head>
+    <body>
+
+    <p>Wow, you're a smart one! Or a cheater...</p>
+    <p>Welcome to layer 2!</p>
+
+    <p>⚆ 1117811117380909</p>
+    <p>➆ -21119111111</p>
+    <p>✄ -29838-2-212-3-2</p>
+
+
+
+
+
+    <input type="text" id="secret" placeholder="0038-2-26812-390"></input>
+    </body>
+</html>
+<script>
+  const secret = document.getElementById("secret");
+  secret.addEventListener("keydown", function (e) {
+      if (e.code === "Enter") {
+          if (e.target.value.toLowerCase() == "password".toLowerCase())
+          {
+            window.location.href = "./layer3.html"
+          }
+      }
+  });
+</script>

@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    function clicked(){
-      var imagePunch = new Image()
-      imagePunch.src = "images/PUNCH.gif"+"?a="+Math.random();
-
-      let element = document.getElementById("guy")
-
-      element.src = imagePunch.src
-
-      setTimeout(reset, 1000)
-    }
-
-    function reset(){
-      var imageDefault = new Image()
-      imageDefault.src = "images/intro.gif"+"?a="+Math.random();
-
-      let element = document.getElementById("guy")
-
-      element.src = imageDefault.src
-    }
-
-    const images = document.getElementsByClassName("project");
-
-    function updateProjects(){
-      // use window.scrollY
-
-      for (i in images)
-      {
-        try
-        {
-          let dist = images[i].getBoundingClientRect().top - window.scrollY
-        }
-        catch(e)
-        {
-
-        }
-      }
-
-      setTimeout(updateProjects, 16)
-    }
-
-    setTimeout(updateProjects, 16)
-
-  </script>
   <head>
     <link rel="stylesheet" href="./style.css">
     <title>Carson's Epic Website</title>
   </head>
   <body>
-    <h1>havent thought of something to put here yet</h1>
+    <h1>Carson's Art Sketchbook!!!</h1>
     <button style="background: transparent; border: none !important; font-size:0;" type="button" onclick="clicked()">
       <image id="guy" style="filter: invert(100%); position: absolute; top: 0%; left: -20%" src="images/intro.gif" width="50%" height="50%">
     </button>
     <h2>Projects<h2>
-    <image src="images/Projects/moodboard.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/emphasis.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/Balance.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/unity.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/characterdesign2.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/popart.jpg" width="50%" height="50%" class="project">
+    <image src="images/Projects/moodboard.gif" width="50%" height="50%" class="project">
+    <p>This was the first project <i>I</i> worked on for the class and I don't think I really put much effort into it. There isn't much unity or cohesion in the image. It at the very least has a pretty alright idea of color.</p>
+    <image src="images/Projects/emphasis.gif" width="50%" height="50%" class="project">
+    <p>This was a <i>r</i>ecreation of a scene from chapter 3 of deltarune. I think this kind of shows my main skillset, being much better at enviornments over characters. However, the actual application of emphasis (the main goal of the assignment) I think turned out pretty well.</p>
+    <image src="images/Projects/Balance.gif" width="50%" height="50%" class="project">
+    <p>I feel like this would've been a better drawing if I had made the objects move further into the background while keeping the circular emphasis. I also forgot to remove the line I used for said emphasis which I think kind of detracts from the piece.</p>
+    <image src="images/Projects/unity.gif" width="50%" height="50%" class="project">
+    <p>This is probably the image I'm most proud of from this class, even though I messed up the perspective and lighting on some parts of the piece. I learned a lot about shadow catchers and view layers in Blender which I'd call a success.</p>
+    <image src="images/Projects/characterdesign2.gif" width="50%" height="50%" class="project">
+    <p>Another showcase of me hind of sucking at proportions, which I'm fine with. The actual design of the character I think is pretty alright. This was going to be used in the game I'm making with my friend Sleepy but the design isn't up to his standards and he already has something in his head.</p>
+    <image src="images/Projects/popart.gif" width="50%" height="50%" class="project">
     <h2>Sketches<h2>
-    <p>reflections here</p>
-    <image src="images/Projects/2026-01-21.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/Enemy Concept.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-    <image src="images/Projects/tank concept.png" width="50%" height="50%" class="project">
-    <p>reflections here</p>
-
+    <p>This was a really cool piece to create. The mi<i>x</i> of colors doesn't exactly work in my opinion and was directly inspired by one of the example images. I think I succeeded in creating a uni<i>q</i>ue vibe with the do<i>g</i> outline.</p>
+    <image src="images/Projects/occmodding.gif" width="50%" height="50%" class="project">
+    <p>This was a diagram I created for the modding system in my game near the start of the semester. You can tell my hands are really shaky when drawing. Did I even implement this? No I went with a completely different system.</p>
+    <image src="images/Projects/Enemy Concept.gif" width="50%" height="50%" class="project">
+    <p>This was the first of 2 pages where I brainstormed designs for enemies in a  game I was working on. I wanted a flying enemy to add to the roster since I felt that was really needed. The enemies in the game are all aliens, so I wanted to make a weird/unconventional design. I feel like the final result works pretty well with the game.</p>
+    <image src="images/Projects/tank concept.gif" width="50%" height="50%" class="project">
+    <p>This <i>p</i>age was made when I was trying to brainstorm a tank enemy design for the game I mentioned in the last reflection. None of the designs really fit the game and I couldn't really get it to click. In <i>h</i>indsight, I feel like the top design would actually work for a tank, I just wanted something else in the moment.</p>
+    <input type="text" id="secret" placeholder="Italics"></input>
   </body>
 </html>
+<script>
+  function clicked(){
+    var imagePunch = new Image()
+    imagePunch.src = "images/PUNCH.gif"+"?a="+Math.random();
+
+    let element = document.getElementById("guy")
+
+    element.src = imagePunch.src
+
+    setTimeout(reset, 1000)
+  }
+
+  function reset(){
+    var imageDefault = new Image()
+    imageDefault.src = "images/intro.gif"+"?a="+Math.random();
+
+    let element = document.getElementById("guy")
+
+    element.src = imageDefault.src
+  }
+
+  const images = document.getElementsByClassName("project");
+
+  function updateProjects(){
+    // use window.scrollY
+
+    for (i in images)
+    {
+      try
+      {
+        let dist = images[i].getBoundingClientRect().top - window.scrollY
+      }
+      catch(e)
+      {
+
+      }
+    }
+
+    setTimeout(updateProjects, 16)
+  }
+
+  setTimeout(updateProjects, 16)
+
+  const secret = document.getElementById("secret");
+  secret.addEventListener("keydown", function (e) {
+      if (e.code === "Enter") {
+          if (e.target.value.toLowerCase() == "IrxqgPh".toLowerCase())
+          {
+            alert("You might need a bit more effort than that ;)")
+          }
+          if (e.target.value.toLowerCase() == "FoundMe".toLowerCase())
+          {
+            window.location.href = "./layer2.html"
+          }
+      }
+  });
+
+</script>

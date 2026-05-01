@@ -1,0 +1,45 @@
+body {
+    background-image: url("images/puterbg.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1080px;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+a:link {
+    color: rgb(0, 166, 0);
+}
+a:visited {
+    color: rgb(0, 81, 0);
+}
+a:hover {
+    color: rgb(0, 255, 28);
+}
+a:active {
+    color: rgb(0, 255, 255);
+}
+
+h1 {
+    color: rgb(0, 255, 28);
+    text-align: center;
+}
+h2 {
+    color: rgb(0, 166, 0);
+    text-align: center;
+}
+p {
+    color: rgb(0, 166, 0);
+    text-align: center;
+}
+
+.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

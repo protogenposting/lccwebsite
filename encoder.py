@@ -1,0 +1,59 @@
+text = "Dvok, sviv'h gsv mvd kzhhdliw. R slkv blf vmqlbvw urtfirmt gsrh lmv lfg CBBCCBBZBHSUPPPTTPPUQQWQWQQHQQZQQ Bvk r kfg gszg gsviv QFHG gl gsild blf luu. Fssss zg gsrh klrmg blf'iv vrgsvi rmhzmv li orpv... nzwv z kiltizn gl zfglwvxibkg gsrh. bvz... fsssssss R tlg mlgsrmt vohv sviv olo".lower()
+
+for i in text:
+    match(i):
+        case "a":
+            print(38, end="")
+        case "b":
+            print(17, end="")
+        case "c":
+            print(98, end="")
+        case "d":
+            print(90, end="")
+        case "e":
+            print(111, end="")
+        case "f":
+            print(93, end="")
+        case "g":
+            print(88, end="")
+        case "h":
+            print(23, end="")
+        case "i":
+            print(38, end="")
+        case "j":
+            print(99, end="")
+        case "k":
+            print(67, end="")
+        case "l":
+            print("09", end="")
+        case "m":
+            print(33, end="")
+        case "n":
+            print(11, end="")
+        case "o":
+            print(12, end="")
+        case "p":
+            print("00", end="")
+        case "q":
+            print(77, end="")
+        case "r":
+            print(-3, end="")
+        case "s":
+            print(-2, end="")
+        case "t":
+            print(-1, end="")
+        case "u":
+            print(43, end="")
+        case "v":
+            print(91, end="")
+        case "w":
+            print(68, end="")
+        case "x":
+            print(66, end="")
+        case "y":
+            print(78, end="")
+        case "z":
+            print(1, end="")
+        case _:
+            print(i, end="")
+
